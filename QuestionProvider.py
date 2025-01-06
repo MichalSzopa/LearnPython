@@ -1,48 +1,36 @@
 from Question import Question
 from Answer import Answer
+import json
 
 class QuestionProvider:
     """
         Provides question list with answers for each question
     """
     def load_questions(self, difficulty: str):
-        def easy_questions():
-            questions = list[Question]
-            questions = [
-                Question(text="What is the correct way to print \"Hello, World!\" in Python?", 
-                         answers=[
-                             Answer(code="A", text="A) print(\"Hello, World!\")", isTrue=True),
-                             Answer(code="B", text="B) x=2", isTrue=False),
-                             Answer(code="C", text="C) return \"Hello World!\"", isTrue=False)
-                             ]),
-            ]
-            return questions
-        
-        def medium_questions():
-            questions = list[Question]
-            questions = [
-                # TODO
-            ]
-            return questions
-        
-        def hard_questions():
-            questions = list[Question]
-            questions = [
-                # TODO
-            ]
-            return questions
+
+        def load_questions_from_file(fileName: str):
+            with open(fileName, 'r') as file:
+                data = json.load(file)
+                questions = []
+                for question in data['questions']:
+                    questionToAdd = Question(text=question['text'], answers=[])
+                    for answer in question['answers']:
+                        answerToAdd = Answer(code=answer['code'], text=answer['text'], isTrue=answer['isTrue'])
+                        questionToAdd.answers.append(answerToAdd)
+                    questions.append(questionToAdd)
+
+                return questions
 
         match difficulty:
             case "easy":
-                return easy_questions()
+                return load_questions_from_file('easyQuestions.json')
             case "medium":
-                return medium_questions()
+                return load_questions_from_file('mediumQuestions.json')
             case "hard":
-                return hard_questions()
+                return load_questions_from_file('hardQuestions.json')
             case _:
                 return list
 
-        # TODO put questions and answers to external source, like database or json files
         # TODO randomize questions ~random.sample(self.questions[difficulty], min(10, len(self.questions[difficulty])))
         
         

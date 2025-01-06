@@ -1,0 +1,204 @@
+{
+    "questions": [
+      {
+        "text": "What is the correct way to print 'Hello, World!' in Python?",
+        "answers": [
+          {
+            "code": "A",
+            "text": "A) print('Hello, World!')",
+            "isTrue": true
+          },
+          {
+            "code": "B",
+            "text": "B) echo 'Hello, World!'",
+            "isTrue": false
+          },
+          {
+            "code": "C",
+            "text": "C) printf('Hello, World!')",
+            "isTrue": false
+          }
+        ]
+      },
+      {
+        "text": "Which of the following is a valid variable name in Python?",
+        "answers": [
+          {
+            "code": "A",
+            "text": "A) 1variable",
+            "isTrue": false
+          },
+          {
+            "code": "B",
+            "text": "B) _variable",
+            "isTrue": true
+          },
+          {
+            "code": "C",
+            "text": "C) variable-name",
+            "isTrue": false
+          }
+        ]
+      },
+      {
+        "text": "What is the output of the following code: print(2 + 3 * 4)?",
+        "answers": [
+          {
+            "code": "A",
+            "text": "A) 20",
+            "isTrue": true
+          },
+          {
+            "code": "B",
+            "text": "B) 14",
+            "isTrue": false
+          },
+          {
+            "code": "C",
+            "text": "C) 23",
+            "isTrue": false
+          }
+        ]
+      },
+      {
+        "text": "Which keyword is used to define a function in Python?",
+        "answers": [
+          {
+            "code": "A",
+            "text": "A) function",
+            "isTrue": false
+          },
+          {
+            "code": "B",
+            "text": "B) def",
+            "isTrue": true
+          },
+          {
+            "code": "C",
+            "text": "C) func",
+            "isTrue": false
+          }
+        ]
+      },
+      {
+        "text": "Which of the following data types is immutable in Python?",
+        "answers": [
+          {
+            "code": "A",
+            "text": "A) List",
+            "isTrue": false
+          },
+          {
+            "code": "B",
+            "text": "B) Dictionary",
+            "isTrue": false
+          },
+          {
+            "code": "C",
+            "text": "C) Tuple",
+            "isTrue": true
+          }
+        ]
+      },
+      {
+        "text": "What is the result of the expression: 5 == 5?",
+        "answers": [
+          {
+            "code": "A",
+            "text": "A) True",
+            "isTrue": true
+          },
+          {
+            "code": "B",
+            "text": "B) False",
+            "isTrue": false
+          },
+          {
+            "code": "C",
+            "text": "C) None",
+            "isTrue": false
+          }
+        ]
+      },
+      {
+        "text": "What does the 'len()' function do in Python?",
+        "answers": [
+          {
+            "code": "A",
+            "text": "A) It returns the length of an object.",
+            "isTrue": true
+          },
+          {
+            "code": "B",
+            "text": "B) It returns the type of an object.",
+            "isTrue": false
+          },
+          {
+            "code": "C",
+            "text": "C) It removes an item from a list.",
+            "isTrue": false
+          }
+        ]
+      },
+      {
+        "text": "Which of the following is NOT a valid Python data type?",
+        "answers": [
+          {
+            "code": "A",
+            "text": "A) String",
+            "isTrue": false
+          },
+          {
+            "code": "B",
+            "text": "B) Integer",
+            "isTrue": false
+          },
+          {
+            "code": "C",
+            "text": "C) Character",
+            "isTrue": true
+          }
+        ]
+      },
+      {
+        "text": "How do you insert comments in Python?",
+        "answers": [
+          {
+            "code": "A",
+            "text": "A) # This is a comment",
+            "isTrue": true
+          },
+          {
+            "code": "B",
+            "text": "B) // This is a comment",
+            "isTrue": false
+          },
+          {
+            "code": "C",
+            "text": "C) /* This is a comment */",
+            "isTrue": false
+          }
+        ]
+      },
+      {
+        "text": "What is the output of the following code: print(type(42))?",
+        "answers": [
+          {
+            "code": "A",
+            "text": "A) <class 'int'>",
+            "isTrue": true
+          },
+          {
+            "code": "B",
+            "text": "B) <class 'float'>",
+            "isTrue": false
+          },
+          {
+            "code": "C",
+            "text": "C) <class 'str'>",
+            "isTrue": false
+          }
+        ]
+      }
+    ]
+  }
