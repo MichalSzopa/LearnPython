@@ -1,0 +1,94 @@
+{
+    "questions": [
+      {
+        "text": "What is the purpose of the 'with' statement in Python?",
+        "answers": [
+          { "code": "A", "text": "A) To declare a function", "isTrue": false },
+          { "code": "B", "text": "B) To handle exceptions", "isTrue": false },
+          { "code": "C", "text": "C) To ensure proper resource management (e.g., file closing)", "isTrue": true },
+          { "code": "D", "text": "D) To define a loop", "isTrue": false }
+        ]
+      },
+      {
+        "text": "What does the 'is' operator compare?",
+        "answers": [
+          { "code": "A", "text": "A) Equality of values", "isTrue": false },
+          { "code": "B", "text": "B) Memory addresses (object identity)", "isTrue": true },
+          { "code": "C", "text": "C) Data types", "isTrue": false },
+          { "code": "D", "text": "D) Keys in dictionaries", "isTrue": false }
+        ]
+      },
+      {
+        "text": "Which method is used to create a new object in a Python class?",
+        "answers": [
+          { "code": "A", "text": "A) __init__", "isTrue": false },
+          { "code": "B", "text": "B) __new__", "isTrue": true },
+          { "code": "C", "text": "C) __create__", "isTrue": false },
+          { "code": "D", "text": "D) __start__", "isTrue": false }
+        ]
+      },
+      {
+        "text": "What will be the output of the following code?\n\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)",
+        "answers": [
+          { "code": "A", "text": "A) [1, 2, 3]", "isTrue": false },
+          { "code": "B", "text": "B) [1, 2, 3, 4]", "isTrue": true },
+          { "code": "C", "text": "C) Error", "isTrue": false },
+          { "code": "D", "text": "D) None of the above", "isTrue": false }
+        ]
+      },
+      {
+        "text": "Which of the following is NOT a valid way to define a dictionary in Python?",
+        "answers": [
+          { "code": "A", "text": "A) my_dict = {'key': 'value'}", "isTrue": false },
+          { "code": "B", "text": "B) my_dict = dict(key='value')", "isTrue": false },
+          { "code": "C", "text": "C) my_dict = {['key']: 'value'}", "isTrue": true },
+          { "code": "D", "text": "D) my_dict = {}", "isTrue": false }
+        ]
+      },
+      {
+        "text": "What does the 'yield' keyword do in Python?",
+        "answers": [
+          { "code": "A", "text": "A) Returns a value and terminates the function", "isTrue": false },
+          { "code": "B", "text": "B) Creates a generator and pauses execution", "isTrue": true },
+          { "code": "C", "text": "C) Creates a thread", "isTrue": false },
+          { "code": "D", "text": "D) Terminates a program", "isTrue": false }
+        ]
+      },
+      {
+        "text": "What is the output of the following code?\n\nprint('Hello {name}'.format(name='John'))",
+        "answers": [
+          { "code": "A", "text": "A) Hello name", "isTrue": false },
+          { "code": "B", "text": "B) Hello {name}", "isTrue": false },
+          { "code": "C", "text": "C) Hello John", "isTrue": true },
+          { "code": "D", "text": "D) Error", "isTrue": false }
+        ]
+      },
+      {
+        "text": "What is the difference between '==' and 'is' in Python?",
+        "answers": [
+          { "code": "A", "text": "A) '==' checks for equality, 'is' checks for object identity", "isTrue": true },
+          { "code": "B", "text": "B) '==' compares data types, 'is' compares values", "isTrue": false },
+          { "code": "C", "text": "C) '==' compares strings, 'is' compares integers", "isTrue": false },
+          { "code": "D", "text": "D) They are interchangeable", "isTrue": false }
+        ]
+      },
+      {
+        "text": "How can you handle exceptions in Python?",
+        "answers": [
+          { "code": "A", "text": "A) Using a try-except block", "isTrue": true },
+          { "code": "B", "text": "B) Using an if-else block", "isTrue": false },
+          { "code": "C", "text": "C) Using a while loop", "isTrue": false },
+          { "code": "D", "text": "D) Using the pass keyword", "isTrue": false }
+        ]
+      },
+      {
+        "text": "What does the following code do?\n\nx = [i**2 for i in range(5)]",
+        "answers": [
+          { "code": "A", "text": "A) Creates a list of integers from 1 to 5", "isTrue": false },
+          { "code": "B", "text": "B) Creates a list of squares of integers from 0 to 4", "isTrue": true },
+          { "code": "C", "text": "C) Creates a list of powers of 2", "isTrue": false },
+          { "code": "D", "text": "D) Generates a syntax error", "isTrue": false }
+        ]
+      }
+    ]
+  }

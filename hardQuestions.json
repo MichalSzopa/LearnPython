@@ -1,0 +1,93 @@
+{
+    "questions": [
+      {
+        "text": "What is the output of the following code?\n\nx = [[0]*3]*3\nx[0][0] = 1\nprint(x)",
+        "answers": [
+          { "code": "A", "text": "A) [[1, 0, 0], [0, 0, 0], [0, 0, 0]]", "isTrue": false },
+          { "code": "B", "text": "B) [[1, 0, 0], [1, 0, 0], [1, 0, 0]]", "isTrue": true },
+          { "code": "C", "text": "C) [[0, 0, 0], [0, 0, 0], [0, 0, 0]]", "isTrue": false },
+          { "code": "D", "text": "D) Error", "isTrue": false }
+        ]
+      },
+      {
+        "text": "Which of the following describes Python's GIL (Global Interpreter Lock)?",
+        "answers": [
+          { "code": "A", "text": "A) It allows Python to use multiple threads efficiently", "isTrue": false },
+          { "code": "B", "text": "B) It ensures only one thread executes Python bytecode at a time", "isTrue": true },
+          { "code": "C", "text": "C) It is used to manage memory leaks", "isTrue": false },
+          { "code": "D", "text": "D) It prevents syntax errors during runtime", "isTrue": false }
+        ]
+      },
+      {
+        "text": "What will be the result of the following code?\n\ndef generator():\n    yield from range(3)\n    yield from 'ABC'\n\nprint(list(generator()))",
+        "answers": [
+          { "code": "A", "text": "A) [0, 1, 2, 'A', 'B', 'C']", "isTrue": true },
+          { "code": "C", "text": "C) [0, 1, 2, 'ABC']", "isTrue": false },
+          { "code": "D", "text": "D) Error", "isTrue": false }
+        ]
+      },
+      {
+        "text": "What is the output of the following code?\n\nclass Test:\n    def __init__(self):\n        self.__x = 10\n\nobj = Test()\nprint(obj.__x)",
+        "answers": [
+          { "code": "A", "text": "A) 10", "isTrue": false },
+          { "code": "B", "text": "B) Error: AttributeError", "isTrue": true },
+          { "code": "C", "text": "C) None", "isTrue": false },
+          { "code": "D", "text": "D) Error: SyntaxError", "isTrue": false }
+        ]
+      },
+      {
+        "text": "What is the correct way to merge two dictionaries in Python 3.9+?",
+        "answers": [
+          { "code": "A", "text": "A) dict1.update(dict2)", "isTrue": false },
+          { "code": "B", "text": "B) dict1 | dict2", "isTrue": true },
+          { "code": "C", "text": "C) dict1 + dict2", "isTrue": false },
+          { "code": "D", "text": "D) dict1 & dict2", "isTrue": false }
+        ]
+      },
+      {
+        "text": "What is the output of the following code?\n\nx = (i**2 for i in range(5))\nprint(next(x))\nprint(next(x))",
+        "answers": [
+          { "code": "A", "text": "A) 1, 4", "isTrue": false },
+          { "code": "B", "text": "B) 0, 1", "isTrue": true },
+          { "code": "C", "text": "C) [0, 1]", "isTrue": false },
+          { "code": "D", "text": "D) Error", "isTrue": false }
+        ]
+      },
+      {
+        "text": "What is the result of using the `@staticmethod` decorator in a class?",
+        "answers": [
+          { "code": "A", "text": "A) It allows the method to access instance variables", "isTrue": false },
+          { "code": "B", "text": "B) It allows the method to access class variables", "isTrue": false },
+          { "code": "C", "text": "C) It defines a method that does not access instance or class variables", "isTrue": true },
+          { "code": "D", "text": "D) It converts a function to a generator", "isTrue": false }
+        ]
+      },
+      {
+        "text": "Which of the following is NOT a valid Python decorator?",
+        "answers": [
+          { "code": "A", "text": "A) @property", "isTrue": false },
+          { "code": "B", "text": "B) @staticmethod", "isTrue": false },
+          { "code": "C", "text": "C) @classmethod", "isTrue": false },
+          { "code": "D", "text": "D) @lambda", "isTrue": true }
+        ]
+      },
+      {
+        "text": "What is the purpose of the `__slots__` attribute in a Python class?",
+        "answers": [
+          { "code": "A", "text": "A) It limits the attributes that can be dynamically added to an instance", "isTrue": true },
+          { "code": "B", "text": "B) It initializes private variables", "isTrue": false },
+          { "code": "C", "text": "C) It defines the base class of the current class", "isTrue": false },
+          { "code": "D", "text": "D) It creates a thread-safe class", "isTrue": false }
+        ]
+      },
+      {
+        "text": "What does the following code do?\n\nfrom collections import Counter\nc = Counter(['a', 'b', 'a', 'c', 'b', 'a'])\nprint(c.most_common(1))",
+        "answers": [
+          { "code": "A", "text": "A) [('a', 3)]", "isTrue": true },
+          { "code": "B", "text": "B) {'a': 3}", "isTrue": false },
+          { "code": "C", "text": "C) [('a', 3), ('b', 2), ('c', 1)]", "isTrue": false },
+          { "code": "D", "text": "D) Error", "isTrue": false }
+        ]
+      }
+    ]
+  }

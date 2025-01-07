@@ -10,11 +10,12 @@ class Question:
     answers: list[Answer]
 
     def is_correct(self, answer: str):
-        ans = next((x for x in self.answers if x.code == answer), None)
+        ans = next((x for x in self.answers if x.code.lower() == answer.lower()), None)
         if (ans != None and ans.isTrue):
             return True
         else:
             return False
+        
     @property
     def correct_answer(self):
         return next((x for x in self.answers if x.isTrue), None)

@@ -46,12 +46,12 @@
           {
             "code": "A",
             "text": "A) 20",
-            "isTrue": true
+            "isTrue": false
           },
           {
             "code": "B",
             "text": "B) 14",
-            "isTrue": false
+            "isTrue": true
           },
           {
             "code": "C",
